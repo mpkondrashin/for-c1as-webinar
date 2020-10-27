@@ -1,0 +1,8 @@
+version: "1"
+
+serices:
+  web:
+    build: .
+    restart: always
+    environment:
+      - TZ=Europe/Moscow

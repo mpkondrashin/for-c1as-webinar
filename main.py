@@ -1,9 +1,6 @@
-#import trend_app_protect.start
-import os
-import sys
-import hashlib
+
 import time
-from flask import Flask, request, redirect
+from flask import Flask, request
 
 app = Flask(__name__)
 

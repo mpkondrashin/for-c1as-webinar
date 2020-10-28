@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-forc1cs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kube-forc1cs
+  template:
+    metadata:
+      labels:
+        app: kube-forc1cs
+    spec:
+      containers:
+      - name: kube-forc1cs
+        image: mpkondrashin/forc1cs
+        ports:
+        - containerPort: 5000
+          protocol: TCP
+
+

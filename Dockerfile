@@ -1,4 +1,4 @@
-FROM python:3.10.0rc1-slim
+FROM python:3.11.0a1-slim
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY . /usr/src/app
